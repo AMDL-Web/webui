@@ -10,7 +10,7 @@
     "format": "prettier --write .",
     "check": "pnpm run format && vue-tsc -b",
     "preinstall": "npx only-allow pnpm",
-    "git": "pnpm run check && git add *"
+    "git": "pnpm run check && git add * && git add *"
   },
   "dependencies": {
     "prettier": "^3.6.2",
