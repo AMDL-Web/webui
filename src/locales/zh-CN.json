@@ -1,0 +1,9 @@
+{
+  "form": {
+    "songUrl": "歌曲链接",
+    "push": "推送"
+  },
+  "footer": {
+    "version": "版本号: "
+  }
+}

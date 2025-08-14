@@ -1,0 +1,9 @@
+{
+  "form": {
+    "songUrl": "Song URL",
+    "push": "Push"
+  },
+  "footer": {
+    "version": "Version: "
+  }
+}
