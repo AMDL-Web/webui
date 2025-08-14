@@ -27,21 +27,21 @@ const pushTask = () => {
   </div>
   <Footer :gitVersion="gitVersion" />
 </template>
-<style scoped>
-.container {
-  height: 95vh;
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-}
+<style scoped lang="stylus">
+.container
+  height 95vh
+  display flex
+  margin 0 auto
+  justify-content center
+  align-items center
 
-.form-container {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-}
+.form-container
+  width 100vw
+  display flex
+  justify-content center
+  align-items center
+  gap 10px
+
+  @media (max-width: 767px)
+    flex-direction column
 </style>
