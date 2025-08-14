@@ -41,6 +41,11 @@ defineExpose({
       border 0.5px solid black
       box-shadow -5px -5px 0 black
 
+    &:hover
+      outline none
+      border 0.5px solid black
+      box-shadow -5px -5px 0 black
+
   &:hover > .icon
     animation anim 1s linear infinite
 

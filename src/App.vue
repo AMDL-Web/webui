@@ -22,7 +22,9 @@ const pushTask = () => {
     <Sidebar />
     <div class="form-container">
       <input_shadow ref="inputRef" :text="t('form.songUrl')" />
-      <taskPush_Button @click="pushTask" :text="t('form.push')" />
+      <div class="button-wrapper">
+        <taskPush_Button @click="pushTask" :text="t('form.push')" />
+      </div>
     </div>
   </div>
   <Footer :gitVersion="gitVersion" />
@@ -44,4 +46,9 @@ const pushTask = () => {
 
   @media (max-width: 767px)
     flex-direction column
+
+.button-wrapper
+  display inline-block
+  width 250px
+  overflow visible
 </style>
