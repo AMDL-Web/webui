@@ -114,6 +114,14 @@ const options = [
     value: "ja-JP",
     label: "日本語",
   },
+  {
+    value: "fr-FR",
+    label: "Français",
+  },
+  {
+    value: "es-ES",
+    label: "Español",
+  },
 ];
 
 // 切换侧边栏
@@ -131,6 +139,8 @@ const changeLocale = () => {
   locale.value = currentLocale.value;
   // 保存用户选择的语言到localStorage
   localStorage.setItem("language", currentLocale.value);
+  // 修改网页头的lang属性
+  document.documentElement.lang = currentLocale.value;
 };
 
 // 页面加载时读取用户之前选择的语言
