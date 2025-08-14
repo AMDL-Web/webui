@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
     <a href="https://github.com/AMDL-Project/AMDL">AMDL Project</a> |
-    {{ $t("footer.version") }} {{ gitVersion }}
+    {{ $t("footer.version") }}: {{ gitVersion }}
   </div>
 </template>
 

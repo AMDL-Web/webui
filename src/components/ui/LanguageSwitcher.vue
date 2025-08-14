@@ -1,15 +1,39 @@
 <template>
   <div class="language-switcher">
-    <select v-model="currentLocale" @change="changeLocale">
-      <option value="zh-CN">中文</option>
-      <option value="en-US">English</option>
-    </select>
+    <el-select
+      v-model="currentLocale"
+      @change="changeLocale"
+      placeholder="Select"
+      style="width: 240px"
+    >
+      <el-option
+        v-for="item in options"
+        :key="item.value"
+        :label="item.label"
+        :value="item.value"
+      />
+    </el-select>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
 import { useI18n } from "vue-i18n";
+
+const options = [
+  {
+    value: "zh-CN",
+    label: "中文",
+  },
+  {
+    value: "en-US",
+    label: "English",
+  },
+  {
+    value: "jp",
+    label: "日本語",
+  },
+];
 
 const { locale } = useI18n();
 const currentLocale = ref("zh-CN");
@@ -35,13 +59,5 @@ onMounted(() => {
   position: absolute;
   top: 20px;
   right: 20px;
-}
-
-select {
-  padding: 5px 10px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  background-color: white;
-  font-size: 14px;
 }
 </style>

@@ -4,7 +4,7 @@ import { useI18n } from "vue-i18n";
 import taskPush_Button from "./components/ui/buttons/taskPush.vue";
 import input_shadow from "./components/ui/Form/inputShadow.vue";
 import Footer from "./components/ui/footer.vue";
-import LanguageSwitcher from "./components/ui/LanguageSwitcher.vue";
+import Sidebar from "./components/ui/Sidebar.vue";
 const gitVersion = "{{gitVersion}}";
 
 const { t } = useI18n();
@@ -19,7 +19,7 @@ const pushTask = () => {
 
 <template>
   <div class="container">
-    <LanguageSwitcher />
+    <Sidebar />
     <div class="form-container">
       <input_shadow ref="inputRef" :text="t('form.songUrl')" />
       <taskPush_Button @click="pushTask" :text="t('form.push')" />

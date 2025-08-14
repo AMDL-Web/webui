@@ -3,11 +3,13 @@ import { createI18n } from "vue-i18n";
 // 导入语言包
 import zhCN from "../locales/zh-CN.json";
 import enUS from "../locales/en-US.json";
+import jaJP from "../locales/ja-JP.json";
 
 // 定义支持的语言
 const messages = {
   "zh-CN": zhCN,
   "en-US": enUS,
+  "ja-JP": jaJP,
 };
 
 // 从localStorage获取保存的语言，如果没有则使用默认语言
