@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <a href="https://github.com/AMDL-Project/AMDL">AMDL Project</a> |
+    <a href="https://github.com/AMDL-Web/webui">AMDL Webui</a> |
     {{ $t("footer.version") }}: {{ gitVersion }}
   </div>
 </template>

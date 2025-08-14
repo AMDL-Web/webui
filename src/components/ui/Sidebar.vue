@@ -39,22 +39,20 @@
             @select="handleLinkSelect"
           >
             <el-menu-item index="1">
-              <el-link
-                href="https://github.com/AMDL-Project/"
-                target="_blank"
-                >{{ t("sidebar.link.github") }}</el-link
-              >
+              <el-link href="https://github.com/AMDL-Web/" target="_blank">{{
+                t("sidebar.link.github")
+              }}</el-link>
             </el-menu-item>
             <el-menu-item index="2">
               <el-link
-                href="https://github.com/AMDL-Project/AMDL/issues"
+                href="https://github.com/AMDL-Web/webui/issues"
                 target="_blank"
                 >{{ t("sidebar.link.issue") }}</el-link
               >
             </el-menu-item>
             <el-menu-item index="3">
               <el-link
-                href="https://github.com/AMDL-Project/AMDL/discussions"
+                href="https://github.com/AMDL-Web/webui"
                 target="_blank"
                 >{{ t("sidebar.link.discussions") }}</el-link
               >
